@@ -13,7 +13,7 @@
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -387,11 +387,11 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>DMAR</string>
+				<string>#MCFG</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
+				<string>DMAR</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -408,11 +408,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v debug=0x100 -radvesa</string>
+		<string>-v debug=0x100</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>NeverHibernate</key>
-		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Timeout</key>
@@ -441,7 +439,7 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<false/>
+			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -449,14 +447,6 @@
 		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>mNight</string>
-	</dict>
-	<key>Graphics</key>
-	<dict>
-		<key>Inject</key>
-		<dict>
-			<key>Intel</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -530,6 +520,12 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>MLB</key>
+		<string>C02432611U5FMQFJC</string>
+		<key>ROM</key>
+		<data>
+		+KljJ4F0
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -543,6 +539,8 @@
 		<string>Mac-189A3D4F975D5FFC</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02432611U5FMQFJC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -569,13 +567,23 @@
 		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
+		<key>SerialNumber</key>
+		<string>C02N68K9G3QH</string>
+		<key>SmUUID</key>
+		<string>4C28DDA6-86EB-57F6-817B-A683EC6E9586</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>396EA510-69EC-5BB3-A109-2E1100DB4A09</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
