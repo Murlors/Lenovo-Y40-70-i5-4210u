@@ -563,8 +563,6 @@
 		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
-		<key>Trust</key>
-		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
