@@ -12,6 +12,14 @@
 			<dict>
 				<key>FixHPET</key>
 				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+				<key>FixWAK</key>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -31,7 +39,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename _DSM to XDSM</string>
+					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -65,34 +73,6 @@
 					<key>Find</key>
 					<data>
 					RUhDMg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EUSB to EH01, optionally pair with SSDT-EH01.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RVVTQg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change USBE to EH02, optionally pair with SSDT-EH02.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					VVNCRQ==
 					</data>
 					<key>Replace</key>
 					<data>
@@ -227,156 +207,142 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>FBST-&gt;XBST</string>
+					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					RkJTVAQ=
+					X09TSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					WEJTVAQ=
+					WE9TSQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_BIX-&gt;XBIX</string>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X0JJWAA=
+					T1NJRA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WEJJWAA=
+					WFNJRA==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>BIFA-&gt;XIFA</string>
+					<string>change Method(_Q11,0,N) to XQ11,optionally pair with SSDT-FN.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					QklGQQA=
+					X1ExMQA=
 					</data>
 					<key>Replace</key>
 					<data>
-					WElGQQA=
+					WFExMQA=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>SMBR-&gt;XMBR</string>
+					<string>change Method(_Q12,0,N) to XQ12,optionally pair with SSDT-FN.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					U01CUgs=
+					X1ExMgA=
 					</data>
 					<key>Replace</key>
 					<data>
-					WE1CUgs=
+					WFExMgA=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>SMBW-&gt;XMBW</string>
+					<string>Change LID0._PRW to LID0.XPRW</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					U01CVw0=
+					CF9QUlc=
 					</data>
 					<key>Replace</key>
 					<data>
-					WE1CVw0=
+					CFhQUlc=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>ECSB-&gt;XCSB</string>
+					<string>Change (_TMP,0,S) to XTMP</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					RUNTQgc=
+					X1RNUA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WENTQgc=
+					WFRNUA==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>TACH-&gt;XACH</string>
+					<string>Change (FANW,2,N) to XANW</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					VEFDSAk=
+					RkFOVwI=
 					</data>
 					<key>Replace</key>
 					<data>
-					WEFDSAk=
+					WEFOVwI=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>RDBA-&gt;XDBA</string>
+					<string>Change (GPRW,2,N) to XPRW, SSDT-PRW.aml</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
-					UkRCQQ==
+					R1BSVwI=
 					</data>
 					<key>Replace</key>
 					<data>
-					WERCQQ==
+					WFBSVwI=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>RDBB-&gt;XDBB</string>
+					<string>Change WMMX to WMMZ (remove WMMX method)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					UkRCQg==
+					V01NWAM=
 					</data>
 					<key>Replace</key>
 					<data>
-					WERCQg==
+					V01NWgM=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>WRBA-&gt;XRBA</string>
+					<string>Change (FANG,1,N) to XANG</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					V1JCQQ==
+					RkFORwE=
 					</data>
 					<key>Replace</key>
 					<data>
-					WFJCQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>WRBB-&gt;XRBB</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					V1JCQg==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFJCQg==
+					WEFORwE=
 					</data>
 				</dict>
 			</array>
@@ -402,6 +368,28 @@
 				<true/>
 			</dict>
 		</dict>
+		<key>SortedOrder</key>
+		<array>
+			<string>DSDT.aml</string>
+			<string>SSDT.aml</string>
+			<string>SSDT-XCPM.aml</string>
+			<string>SSDT-DDGPU.aml</string>
+			<string>SSDT-EH01.aml</string>
+			<string>SSDT-EH02.aml</string>
+			<string>SSDT-IGPU.aml</string>
+			<string>SSDT-LPC.aml</string>
+			<string>SSDT-MCHC.aml</string>
+			<string>SSDT-PNLF.aml</string>
+			<string>SSDT-HDAU.aml</string>
+			<string>SSDT-HDEF.aml</string>
+			<string>SSDT-PRW.aml</string>
+			<string>SSDT-SMBUS.aml</string>
+			<string>SSDT-XHC.aml</string>
+			<string>SSDT-UIAC.aml</string>
+			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-XSEL.aml</string>
+			<string>SSDT-FN.aml</string>
+		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
@@ -416,9 +404,22 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>AFGLowPowerState</key>
+			<true/>
+			<key>ResetHDA</key>
+			<true/>
+		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<true/>
 			<key>FixOwnership</key>
+			<true/>
+			<key>HighCurrent</key>
+			<true/>
+			<key>Inject</key>
 			<true/>
 		</dict>
 	</dict>
@@ -494,6 +495,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Enable 128MB DVMT-prealloc, 48MB framebuffer, 48MB cursor bytes, 0x0a260006</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAYAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				BgAmCgEDAwMAAAAIAAAAAwAAAAM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>0x0a260006 关闭 0204 端口, 改变 0105 DP 端口为 0204 HDMI (RehabMan)</string>
 				<key>Disabled</key>
 				<false/>
@@ -508,6 +527,42 @@
 				<key>Replace</key>
 				<data>
 				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>External icons patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleAHCIPort</string>
+				<key>Replace</key>
+				<data>
+				SW50ZXJuYWw=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleRTC_patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dS4Ptg==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleRTC</string>
+				<key>Replace</key>
+				<data>
+				6y4Ptg==
 				</data>
 			</dict>
 		</array>
@@ -537,6 +592,8 @@
 		<string>Mac-189A3D4F975D5FFC</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02432611U5FMQFJC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -563,13 +620,23 @@
 		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
+		<key>SerialNumber</key>
+		<string>C02N68K9G3QH</string>
+		<key>SmUUID</key>
+		<string>4C28DDA6-86EB-57F6-817B-A683EC6E9586</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>396EA510-69EC-5BB3-A109-2E1100DB4A09</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
