@@ -14,12 +14,6 @@
 				<true/>
 				<key>FixIPIC</key>
 				<true/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixTMR</key>
-				<true/>
-				<key>FixWAK</key>
-				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -207,34 +201,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					T1NJRA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNJRA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(_Q11,0,N) to XQ11,optionally pair with SSDT-FN.aml</string>
 					<key>Disabled</key>
 					<false/>
@@ -277,37 +243,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change (_TMP,0,S) to XTMP</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1RNUA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFRNUA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change (FANW,2,N) to XANW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RkFOVwI=
-					</data>
-					<key>Replace</key>
-					<data>
-					WEFOVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Change (GPRW,2,N) to XPRW, SSDT-PRW.aml</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					R1BSVwI=
@@ -315,34 +253,6 @@
 					<key>Replace</key>
 					<data>
 					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change WMMX to WMMZ (remove WMMX method)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					V01NWAM=
-					</data>
-					<key>Replace</key>
-					<data>
-					V01NWgM=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change (FANG,1,N) to XANG</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RkFORwE=
-					</data>
-					<key>Replace</key>
-					<data>
-					WEFORwE=
 					</data>
 				</dict>
 			</array>
@@ -370,13 +280,12 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>DSDT.aml</string>
 			<string>SSDT.aml</string>
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-DDGPU.aml</string>
+			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-EH01.aml</string>
 			<string>SSDT-EH02.aml</string>
-			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-LPC.aml</string>
 			<string>SSDT-MCHC.aml</string>
 			<string>SSDT-PNLF.aml</string>
@@ -404,20 +313,9 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
-			<key>ResetHDA</key>
-			<true/>
-		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
-			<true/>
-			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
@@ -452,8 +350,6 @@
 		<key>AppleIntelCPUPM</key>
 		<true/>
 		<key>AppleRTC</key>
-		<true/>
-		<key>KernelPm</key>
 		<true/>
 		<key>KextsToPatch</key>
 		<array>
@@ -527,42 +423,6 @@
 				<key>Replace</key>
 				<data>
 				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AppleRTC_patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				dS4Ptg==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleRTC</string>
-				<key>Replace</key>
-				<data>
-				6y4Ptg==
 				</data>
 			</dict>
 		</array>
