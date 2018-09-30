@@ -13,4 +13,4 @@ Ethernet                    Realtek RTL8168/8111/8112 Gigabit Ethernet Controlle
 Wireless network adapter    Intel Dual Band Wireless AC3160
 ```
 
-[查看全文](https://delicacy.ooo/lenovo-y40-70-laptop-mac-os-course-and-efi-share/ "我的个人网站")
+[查看全文](https://delicacy.ooo/lenovo-y40-70-laptop-mac-os-guide-and-efi-share.html "我的个人网站")
