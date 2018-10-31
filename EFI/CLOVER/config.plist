@@ -25,9 +25,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUhDMQ==</data>
+					<data>
+					RUhDMQ==
+					</data>
 					<key>Replace</key>
-					<data>RUgwMQ==</data>
+					<data>
+					RUgwMQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -35,9 +39,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUhDMg==</data>
+					<data>
+					RUhDMg==
+					</data>
 					<key>Replace</key>
-					<data>RUgwMg==</data>
+					<data>
+					RUgwMg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -45,9 +53,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>TFBDXw==</data>
+					<data>
+					TFBDXw==
+					</data>
 					<key>Replace</key>
-					<data>TFBDQg==</data>
+					<data>
+					TFBDQg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -55,9 +67,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>R0ZYMA==</data>
+					<data>
+					R0ZYMA==
+					</data>
 					<key>Replace</key>
-					<data>SUdQVQ==</data>
+					<data>
+					SUdQVQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -65,9 +81,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1ExMQA=</data>
+					<data>
+					X1ExMQA=
+					</data>
 					<key>Replace</key>
-					<data>WFExMQA=</data>
+					<data>
+					WFExMQA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -75,9 +95,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1ExMgA=</data>
+					<data>
+					X1ExMgA=
+					</data>
 					<key>Replace</key>
-					<data>WFExMgA=</data>
+					<data>
+					WFExMgA=
+					</data>
 				</dict>
 			</array>
 		</dict>
@@ -124,7 +148,9 @@
 						<key>Key</key>
 						<string>device-id</string>
 						<key>Value</key>
-						<data>EgQAAA==</data>
+						<data>
+						EgQAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -132,7 +158,9 @@
 						<key>Key</key>
 						<string>AAPL,ig-platform-id</string>
 						<key>Value</key>
-						<data>BgAmCg==</data>
+						<data>
+						BgAmCg==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -148,7 +176,9 @@
 						<key>Key</key>
 						<string>AAPL00,DualLink</string>
 						<key>Value</key>
-						<data>AQAAAA==</data>
+						<data>
+						AQAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -173,7 +203,9 @@
 						<key>Key</key>
 						<string>layout-id</string>
 						<key>Value</key>
-						<data>AwAAAA==</data>
+						<data>
+						AwAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -189,7 +221,8 @@
 						<key>Key</key>
 						<string>PinConfigurations</string>
 						<key>Value</key>
-						<data></data>
+						<data>
+						</data>
 					</dict>
 				</array>
 				<key>PciAddr</key>
@@ -206,7 +239,9 @@
 						<key>Key</key>
 						<string>layout-id</string>
 						<key>Value</key>
-						<data>AwAAAA==</data>
+						<data>
+						AwAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -231,7 +266,9 @@
 						<key>Key</key>
 						<string>subsystem-id</string>
 						<key>Value</key>
-						<data>cHIAAA==</data>
+						<data>
+						cHIAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -239,7 +276,9 @@
 						<key>Key</key>
 						<string>subsystem-vendor-id</string>
 						<key>Value</key>
-						<data>hoAAAA==</data>
+						<data>
+						hoAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -288,7 +327,9 @@
 						<key>Key</key>
 						<string>subsystem-id</string>
 						<key>Value</key>
-						<data>cHIAAA==</data>
+						<data>
+						cHIAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -296,7 +337,9 @@
 						<key>Key</key>
 						<string>subsystem-vendor-id</string>
 						<key>Value</key>
-						<data>hoAAAA==</data>
+						<data>
+						hoAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -347,7 +390,9 @@
 						<key>Key</key>
 						<string>RM,pr2-force</string>
 						<key>Value</key>
-						<data>AAAAAA==</data>
+						<data>
+						AAAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -355,7 +400,9 @@
 						<key>Key</key>
 						<string>subsystem-id</string>
 						<key>Value</key>
-						<data>cHIAAA==</data>
+						<data>
+						cHIAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -363,7 +410,9 @@
 						<key>Key</key>
 						<string>subsystem-vendor-id</string>
 						<key>Value</key>
-						<data>hoAAAA==</data>
+						<data>
+						hoAAAA==
+						</data>
 					</dict>
 					<dict>
 						<key>Disabled</key>
@@ -424,7 +473,9 @@
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>AwAAAA==</data>
+				<data>
+				AwAAAA==
+				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -471,13 +522,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>BgAmCgEDAwMAAAACAAAwAQAAYAA=</data>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAYAA=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
-				<data>BgAmCgEDAgIAAAACAAAwAQAAkAA=</data>
+				<data>
+				BgAmCgEDAgIAAAACAAAwAQAAkAA=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -485,13 +540,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA</data>
+				<data>
+				AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
-				<data>AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA</data>
+				<data>
+				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -499,13 +558,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>AAAAYNkKAADZCgAAAAAAAA==</data>
+				<data>
+				AAAAYNkKAADZCgAAAAAAAA==
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
-				<data>AAAAgNkKAADZCgAAAAAAAA==</data>
+				<data>
+				AAAAgNkKAADZCgAAAAAAAA==
+				</data>
 			</dict>
 		</array>
 	</dict>
@@ -515,6 +578,12 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>MLB</key>
+		<string>C02418701QXFH31A8</string>
+		<key>ROM</key>
+		<data>
+		+KljJ4F0
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -528,6 +597,8 @@
 		<string>Mac-189A3D4F975D5FFC</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02418701QXFH31A8</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -554,13 +625,23 @@
 		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
+		<key>SerialNumber</key>
+		<string>C02MNMZPFH00</string>
+		<key>SmUUID</key>
+		<string>AA2117E2-0E51-5748-AE40-A2A55B1420E1</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>F7F546B9-E5C0-5F1F-B1FC-6ABCB6EFE179</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
